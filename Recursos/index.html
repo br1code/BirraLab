@@ -1,0 +1,110 @@
+<!-- Esto es un comentario -->
+<!-- Los comentarios en mayuscula indican que hay algo que completar en ese lugar. Los comentarios en minuscula son puramente indicativos -->
+
+<!DOCTYPE html>
+<html>
+  <!-- Aca empieza el encabezado de la pagina -->
+  <head>
+    <title>Birra Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type=text/css href="css/extras.css">
+    <link rel="stylesheet" type=text/css href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <!-- Aca termina el encabezado de la pagina -->
+
+
+  <!-- Aca empieza el cuerpo. Desde aca se ve el contenido de la pagina-->
+  <body>
+    <!-- Aca empieza la barra superior -->
+    <div class="fijar-navegacion">
+      <div class="fila padding color-negro">
+        <div class="columna s3">
+          <a href="#" class="boton bloque color-negro">INICIO</a>
+        </div>
+        <div class="columna s3">
+          <a href="#ingredientes" class="boton bloque color-negro">INGREDIENTES</a>
+        </div>
+        <div class="columna s3">
+          <a href="#instrucciones" class="boton bloque color-negro">INSTRUCCIONES</a>
+        </div>
+        <div class="columna s3"><a href="https://www.acamica.com" class="boton bloque color-negro">ACAMICA</a></div>
+      </div>
+    </div>
+    <!-- Aca termina la barra superior -->
+
+
+    <!-- Aca empieza el encabezado con la imagen de fondo -->
+    <header class="imagen-fondo container escala-grises-50" id="home">
+      <div class="alinear-derecha centrar" style="width:60%">
+        <!-- AGREGAR EL TITULO PRINCIPAL DE LA PAGINA EN LA LINEA DE ABAJO-->
+        <h1>BirraLab</h1>
+        <!-- AGREGAR EL SUBTITULO PRINCIPAL DE LA PAGINA EN LA LINEA DE ABAJO-->
+        <h2>Tu fábrica de cerveza artesanal virtual</h2>
+      </div>
+    </header>
+    <!-- Aca termina el encabezado con la imagen de fondo -->
+
+
+    <!-- Aca empieza la seccion Ingredientes -->
+    <div class="color-arena escala-grises-75">
+      <div class="container" id="ingredientes">
+        <div class="contenido" style="max-width:700px">
+          <h3 class="centrar padding-48"><span class="tag espacio-letras">INGREDIENTES</span></h3>
+          <!-- COMPLETAR CON LOS INGREDIENTES PARA HACER CERVEZA EN LAS LINEAS DE ABAJO-->
+          <h4>Agua decolorada:</h4><p>30 litros</p>
+          <h4>Malta de cebada:</h4><p>4.5 kilogramos</p>
+          <h4>Lúpulo:</h4><p>25 gramos</p>
+          <h4>Levadura:</h4><p>un sobre</p>
+          <h4>Azúcar:</h4><p>una cucharada</p>
+        </div>
+      </div>
+      <!-- Aca termina la seccion Ingredientes -->
+
+
+      <!-- Aca empieza la seccion Instrucciones -->
+      <div class="container" id="instrucciones" style="padding-bottom:32px;">
+        <div class="contenido" style="max-width:700px">
+          <h3 class="centrar padding-48"><span class="tag espacio-letras">INSTRUCCIONES</span></h3>
+
+
+          <ul id="pasoAPaso" class="font-size"></ul>
+          <video class="sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
+        </div>
+      </div>
+    </div>
+    <!-- Aca termina la seccion Instrucciones -->
+
+
+    <!-- Aca comienza el pie de pagina -->
+    <footer class="centrar color-gris-claro padding-48">
+      <a href="https://www.acamica.com" target="_blank"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
+    </footer>
+    <!-- Aca termina el pie de pagina -->
+
+
+    <!-- Aca empieza el codigo JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+      window.onload = function(){
+      
+        //----ORDENAR LAS FUNCIONES A CONTINUACION DE ACUERDO A COMO SE REALIZA LA CERVEZA
+        macerar();
+        hervir();
+        enfriar();
+        fermentar();
+        madurar();
+        embotellar();
+        //----FIN DE FUNCIONES A ORDENAR
+      
+        //NO MODIFICAR
+        play();
+        check();
+      }
+    </script>
+    <!-- Aca termina el codigo JavaScript -->
+  </body>
+  <!-- Aca termina el cuerpo de la pagina -->
+</html>
