@@ -2,21 +2,23 @@ body,
 html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
+    scroll-behavior: smooth;
 }
 .imagen-fondo {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/background_4.jpg");
+    background-image: url("../img/background.jpg");
     min-height: 100%;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 70px;
     color: white;
 }
 
 h2 {
     color: white;
+    font-size: 30px;
 }
 
 h3 {
@@ -36,4 +38,9 @@ p {
     text-align: center;
     color: brown;
     font-size: 22px;
+}
+
+.highlight {
+    font-weight: bold;
+    text-decoration-line: underline;
 }
